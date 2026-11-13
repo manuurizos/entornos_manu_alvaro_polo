@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Club de Robotica Rizos</h1>
+    </header>
+
+    <main>
+        <form action="/enviar" method="post">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="ciclo">Ciclo de interes:</label>
+                <select id="ciclo" name="ciclo">
+                    <option value="dam">DAM</option>
+                    <option value="daw">DAW</option>
+                    <option value="asir">ASIR</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalles de la visita</legend>
+                <label for="fecha">Fecha de la visita:</label>
+                <input type="date" id="fecha" name="fecha">
+                <label for="acompanantes">Numero de acompanantes:</label>
+                <input type="number" id="acompanantes" name="acompanantes" min="0" max="5">
+                <input type="radio" id="manana" name="turno" value="manana">
+                <label for="manana">Manana</label>
+                <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde">Tarde</label>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <input type="checkbox" id="acepto" name="acepto">
+                <label for="acepto">Acepto</label>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+
+        <video src="video/videoplayback.mp4" poster="imagen/500_333.jpeg" controls></video>
+    </main>
+
+    <footer>
+        <p>Club de Robotica Rizos, Cordoba</p>
+    </footer>
+</body>
+</html>
+<!--
+a) HTML admite mayusculas y etiquetas sin cerrar; XHTML exige minusculas y cerrar todas las etiquetas.
+b) XHTML es XML, asi que los sistemas de gestion de informacion pueden validarlo y procesarlo.
+-->
